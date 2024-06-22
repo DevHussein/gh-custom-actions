@@ -74,6 +74,10 @@ jobs:
         with:
           bucket-name: gh-custom-action-hosting-0
           source-folder: ./dist
+      - name: Output website URL
+        run: |
+          echo "Website URL: ${{ steps.deploy.outputs.website-url }}"
+
   # Was added to test the custom action
   # information:
   #   runs-on: ubuntu-latest

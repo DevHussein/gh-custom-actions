@@ -11,6 +11,9 @@ inputs:
   source-folder:
     description: "The directory to deploy"
     required: true
+outputs:
+  website-url:
+    description: "The URL of the deployed website"
 runs:
   using: "node20"
   main: "main.js"
